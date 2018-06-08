@@ -3,7 +3,8 @@ import requests
 import time
 import urllib
 
-TOKEN = "559214243:AAHtWX3XkY1z7ioTa-wG7Z6FFKlB6oCZBik"
+TOKEN = #get it from the BotFather in telegram app
+#<api_key> Not mentioned.
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 def get_url(url):
@@ -35,7 +36,7 @@ def get_last_update_id(updates):
     return max(update_ids)
 
 def get_rail_pnr_status(pnr,chat):
-    pnr_url="https://api.railwayapi.com/v2/pnr-status/pnr/{}/apikey/u5kx6jxvi3/".format(pnr)
+    pnr_url="https://api.railwayapi.com/v2/pnr-status/pnr/{}/apikey/<api_key>/".format(pnr)
     data=get_json_from_url(pnr_url)
     if data['passengers']:
         
