@@ -5,9 +5,11 @@ import urllib
 import datetime
 
 last_update_id = None
-TOKEN = "559214243:AAHtWX3XkY1z7ioTa-wG7Z6FFKlB6oCZBik"
+TOKEN = #get it from the BotFather in telegram app
+
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
-api="u5kx6jxvi3"
+api=#<api_key> Not mentioned.
+
 
 def get_url(url):
     response = requests.get(url)
@@ -59,9 +61,6 @@ def train_bet_station(src,dest,chat):
         
     else:
         send_message("No trains between stations.",chat)
-
-        
-    
 
 def get_rail_pnr_status(pnr,chat):
     pnr_url="https://api.railwayapi.com/v2/pnr-status/pnr/{}/apikey/{}/".format(pnr,api)
