@@ -1,2 +1,2 @@
-# Telegram bot in python
-A telegram bot,which can find pnr status and train between stations.
+# Telegram Bot in python.
+A telegram bot,which can find PNR status and train between stations.(No database included)
