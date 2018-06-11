@@ -5,9 +5,9 @@ import urllib
 from datetime import datetime, timedelta
 
 last_update_id = None
-TOKEN = "559214243:AAHtWX3XkY1z7ioTa-wG7Z6FFKlB6oCZBik"
+TOKEN =#Token
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
-api="u5kx6jxvi3"
+api=#your api
 
 def get_url(url):
     response = requests.get(url)
